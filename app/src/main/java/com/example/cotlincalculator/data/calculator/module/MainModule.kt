@@ -24,11 +24,6 @@ object MainModule {
         return CalculatorTemp(calculatorEntity)
     }
 
-
-
-
-
-
     @Provides
     fun calculatorStorage(calculatorTemp: CalculatorTemp): CalculatorStorage {
         return CalculatorStorage(calculatorTemp)
